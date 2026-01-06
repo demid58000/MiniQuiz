@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мини-викторина на JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Мини‑викторина</h1>
+        <p>Ответь на вопросы и узнай свой результат!</p>
+      </header>
+
+      <main class="card">
+        <div id="start-screen" class="screen">
+          <h2>Готов начать?</h2>
+          <p>Нажми на кнопку, чтобы начать викторину из 5 вопросов.</p>
+          <button id="start-btn" class="btn primary">Начать</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+          <div class="quiz-header">
+            <span id="question-counter"></span>
+            <span id="score-counter"></span>
+          </div>
+
+          <h2 id="question-text"></h2>
+
+          <div id="answers" class="answers"></div>
+
+          <button id="next-btn" class="btn" disabled>Следующий вопрос</button>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+          <h2>Результат</h2>
+          <p id="result-text"></p>
+          <button id="restart-btn" class="btn primary">Пройти ещё раз</button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <span>Чистый HTML + CSS + JS</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
